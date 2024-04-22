@@ -23,20 +23,24 @@ Se o XP for maior ou igual do que 10.001 = Radiante
 // Variáveis para armazenar o nome e a quantidade de experiência (XP) do herói
 let heroi = "felipao";
 let experiencia = 1000;
+let nivel;
 
 // Estrutura de decisão para classificar o nível do herói com base na experiência
 if (experiencia < 1000) {
-    console.log("Seu nível é Ferro");
+    nivel = "Ferro";
 } else if (experiencia >= 1001 && experiencia <= 2000) {
-    console.log("Seu nível é Bronze");
+    nivel = "Bronze";
 } else if (experiencia >= 2001 && experiencia <= 5000) {
-    console.log("Seu nível é Prata Ouro");
+    nivel = "Prata Ouro";
 } else if (experiencia >= 5001 && experiencia <= 8000) {
-    console.log("Seu nível é Platina Diamante");
+    nivel = "Platina Diamante";
 } else if (experiencia >= 8001 && experiencia <= 9000) {
-    console.log("Seu nível é Ascendente");
+    nivel = "Ascendente";
 } else if (experiencia >= 9001 && experiencia <= 10000) {
-    console.log("Seu nível é Imortal");
+    nivel = "Imortal";
 } else {
-    console.log("Seu nível é Radiante");
+    nivel = "Radiante";
 }
+
+// Exibe a mensagem com o nome e o nível do herói
+console.log(`O Herói de nome ${heroi} está no nível de ${nivel}`);
